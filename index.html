@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacen</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra" >
+                <a href="./index.html">
+                    <h1 class="logo no-margin">SURNET <span>Almacen</span></h1>
+                </a>
+                    <nav class="navegacion ">
+                        <a href="/index.html" class="navegacion__enlace">Ingreso de ordenes</a>
+                        <a href="./registro.html" class="navegacion__enlace">Ordenes enviadas</a>
+                    </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="contenedor sombra">
+        <section >
+            <div class="registroOrdenes">
+                <form class="formulario" >
+                    <div class="formulario-colums">
+                        <!-- <legend>Datos</legend> -->
+                        <div class="contenedor-campos">
+                            <div class="campo__titulo">
+                                <h4 class=" titulo no-margin centrar-texto ">Ingreso de datos</h4>
+                            </div>
+                            <div class="campo">
+                                <label class="campo__label no-margin"  >Fecha de salida</label>
+                                <input class="campo__field" type="date" >
+                            </div>
+                            <div class=" campo campo_OT">
+                                <label class="campo__label no-margin" >N° de OT</label>
+                                <input class="campo__field" type="text" >
+                            </div>
+                            <div class="campo">
+                                <label class="campo__label no-padding" >N° de ticket</label>
+                                <input class="campo__field" type="text" >
+                            </div>
+                          
+                            <!-- <div class="campo">
+                                <label class="campo__label no-margin">N° de pedido</label>
+                                <input class="campo__field" placeholder="esto  sera automatico" type="text" >
+                            </div> -->
+                            <div class="campo">
+                                <label class="campo__label no-margin" >N° de recibo</label>
+                                <input class="campo__field" type="text" >
+                            </div>
+                            <div class="campo">
+                                <label class="campo__label no-margin" form="names"  >Sector</label>
+                                <select class="campo__field" id="list-names">
+                                    <option >San Juan</option>
+                                    <option >Llano Grande</option>
+                                    <option >Condado</option>
+                                    <option >Moran</option>
+                                </select>
+                            </div>
+                            <!-- <div class="campo">
+                                <label class="campo__label no-margin"  >Tipo de orden</label>
+                                    <select class="campo__field"  name="" id="">
+                                        <option value="">Instalacion</option>
+                                        <option value="">Traslado</option>
+                                        <option value="">Soporte</option>
+                                        <option value="">Construccion</option>
+                                    </select>
+                            </div> -->
+                            <div class="campo">
+                                <label class="campo__label no-margin"  >Grupo asignado</label>
+                                    <select class="campo__field"  name="" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                            </div>
+                            <div class="campo select-codigo">
+                                <label class="campo__label no-margin" >Codigo de reporte</label>
+                                    <select class="campo__field"  name="" id="select-codigo">
+                                        <option value="----">----</option>
+                                        <option value="200">200 - Instalación</option>
+                                        <option value="555">555 - Traslado</option>
+                                        <option value="1">1 - Foco rojo</option>
+                                        <option value="2">2 - Conexión limitada (Sin foco rojo)</option>
+                                        <option value="3">3 - Intermitencia De Red Wifi</option>
+                                        <option value="4">4 - Intermitencia De Servicio</option>
+                                        <option value="6">6 - Ont No Enciende Correctamente</option>
+                                        <option value="7">7 - Red Wifi Desapareció</option>
+                                        <option value="17">17 Caja caida</option>
+                                        <option value="603">603 - Colocación De Caja</option>
+                                        <option value="9">9 Cambio de equipo</option>
+                                    </select>
+                            </div>
+                            <!-- <div class="campo">
+                                <label class="campo__label no-margin" >Descripcion codigo</label>
+                                    <select class="campo__field"  name="" id="">
+                                        <option value="">Instalacion</option>
+                                        <option value="">Foco rojo</option>
+                                        <option value="">Traslado</option>
+                                        <option value="">Cambio de moden</option>
+                                        <option value="">Reubicacion</option>
+                                        <option value="">Intermitencia wifi</option>
+                                        <option value="">Habilitacion de caja</option>
+                                    </select>
+                            </div> -->
+                        </div>
+                        <section class="materiales">
+                            <div class="campo__titulo">
+                                <h4 class=" titulo no-margin centrar-texto ">Materiales</h4>
+                            </div>                  
+                            <div class=" campo">
+                                <label class="campo__label " no-margin">Buscar</label>
+                                <select class="campo__select campo__field" name="" id="selectMaterial">
+                                    <option value="">----------</option>
+                                    <option value="ONT Huawei">ONT Huawei</option>
+                                    <option value="Pig tail">Pig tail</option>
+                                    <option value="Roseta completa (2 tacos, 2 tornillos, 1 transicion, 1 pigtail)">Roseta completa (2 tacos, 2 tornillos, 1 transicion, 1 pigtail)</option>
+                                    <option value="Roseta usada">Roseta usada</option>
+                                    <option value="Router TP-LINK ARCHER C64">Router TP-LINK ARCHER C64</option>
+                                </select>
+                            </div>
+                            <div class="table">
+                                <table class="table__materiales" id="table__materiales">
+                                    <tbody>
+                                        <tr>
+                                            <th class="colum-cantidad">Cantidad</th>
+                                            <th class="colum-descripcion">Descripcion</th>
+                                        </tr>
+                                        <tr>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <div class="boton">
+                            <input type="submit" class="boton__registrar" value="Registrar">
+                            <button onclick="agregarFila()">Agregar fila</button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

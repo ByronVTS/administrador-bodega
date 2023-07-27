@@ -1,0 +1,11 @@
+{
+    "liveServer.settings.port": 5501,
+    "workbench.colorTheme": "Community Material Theme",
+    "workbench.preferredLightColorTheme": "Atom One Dark",
+    "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Octagon)",
+    "workbench.preferredHighContrastLightColorTheme": "Monokai Pro (Filter Octagon)",
+    "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Octagon)",
+    "workbench.iconTheme": "icons",
+    "workbench.sideBar.location": "left",
+    "workbench.reduceMotion": "auto"
+}
