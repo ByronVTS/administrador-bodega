@@ -194,3 +194,30 @@ img{
     align-items: center;
     padding: 2rem;
 }
+
+/* MOBILE */
+span{
+    display: none;
+}
+@media (max-width: 450PX) {
+    .header{
+        /* margin-bottom: 1rem; */
+    }
+    .campo__titulo{
+        margin: 1rem;
+    }
+    .contenedor-campos{
+        line-height: 1;
+    }
+    .campo{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .campo__label{
+        font-weight: bold;
+    }
+    .table{
+        margin: 0;
+    }
+}

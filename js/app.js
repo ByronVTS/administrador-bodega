@@ -137,3 +137,13 @@ function agregarFila(){
   console.log(table)
   var nuevaFila = table.insertRow(table.rows.length)
 }
+
+const btnLimpiartabla = document.querySelector("#btnLimpiarTabla")
+
+btnLimpiartabla.addEventListener("click", function(){
+  const filasAEliminar = Array.from(table.rows).slice(1);
+  filasAEliminar.forEach((fila) => {
+    fila.remove();
+  });
+
+})
